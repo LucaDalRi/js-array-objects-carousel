@@ -79,15 +79,45 @@ function () {
     
     });
     btnAutoplay.addEventListener('click', 
-    
     function() {
     
-        clearInterval(forward);
-        
         backward = setInterval(indietro, 3000);
-    
+
+        clearInterval(forward);
     
     });
+    
+});
+
+document.getElementById('immagine-side-1').addEventListener('click', 
+function() {
+
+    document.getElementById("immagine").src = "img/0" + 1 + ".webp";
+
+});
+document.getElementById('immagine-side-2').addEventListener('click', 
+function() {
+
+    document.getElementById("immagine").src = "img/0" + 2 + ".webp";
+
+});                                                                          // Non so come scrivere il ciclo per questo....
+document.getElementById('immagine-side-3').addEventListener('click', 
+function() {
+
+    document.getElementById("immagine").src = "img/0" + 3 + ".webp";
+
+});
+document.getElementById('immagine-side-4').addEventListener('click', 
+function() {
+
+    document.getElementById("immagine").src = "img/0" + 4 + ".webp";
+
+});
+document.getElementById('immagine-side-5').addEventListener('click', 
+function() {
+
+    document.getElementById("immagine").src = "img/0" + 5 + ".webp";
+
 });
 
 
